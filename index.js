@@ -79,7 +79,7 @@ function Player(
 
         /**
          * -----------------------------------------------
-         * Início - Encapsulando das variáveis de entrada
+         * Início - Encapsulando variáveis de entrada
          */
         getName: () => {
             return name;
