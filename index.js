@@ -1,6 +1,6 @@
 
 /**
- * Módulo para calculos e geração de números pseudoaleatórios
+ * Módulo para cálculos e geração de números pseudoaleatórios
  */
 function GameMathModule() {
     return {
