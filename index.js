@@ -79,7 +79,7 @@ function Player(
 
         /**
          * -----------------------------------------------
-         * Inicio - Encapsulando das variáveis de entrada
+         * Início - Encapsulando das variáveis de entrada
          */
         getName: () => {
             return name;
@@ -238,7 +238,7 @@ function FruitModule(timeP) {
     }
     
     /**
-     * Desenha e a frutinha em uma posição enviada;
+     * Desenha e a frutinha em uma posição passada como parâmetro;
      */
     function setPosY(value) {
         if (value && typeof value == "number") {
@@ -263,9 +263,11 @@ function FruitModule(timeP) {
 
 /**
  * Verifica se a posição do player no mapa é igual a posição 
- * da frutinha e incrementa o score ou reseta a pontuação se
- * o score de um dos jogadores for 100 pontos e exibe a 
- * mensagem avisando quem venceu!
+ * da frutinha e incrementa a pontuação ou se
+ * o score de um dos jogadores for 100 pontos exibe um alerta com 
+ * uma mensagem avisando qual player venceu!
+ * e depois de fechar o alerta reseta a pontuação e o game
+ * 
  */
 function verifyPoints(player, fruit) {
     if (player.getPosX() === fruit.getPosX() && player.getPosY() === fruit.getPosY()) {
